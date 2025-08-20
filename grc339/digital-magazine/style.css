@@ -42,7 +42,7 @@ h2 {
 
 aside h2 {
 	font-size: 1.2em;
-	margin: .3em 0 .3em .2em;
+	margin: .3em 0 .3em 0;
 }
 
 article h2 {
@@ -53,6 +53,18 @@ article h2 {
 
 section.main-story h2 {
 	font-size: 2.8em;
+}
+
+section.main-story p {
+	margin-bottom: .5em;
+}
+
+section.secondary-story p {
+	margin-bottom: .5em;
+}
+
+article p {
+	margin-bottom: 1em;
 }
 
 section.tertiary-story h2 {
