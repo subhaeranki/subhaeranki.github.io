@@ -6,6 +6,9 @@ img {
 	width: 100%;
 	display: block;
 }
+body {
+	background-color: rgb(243, 220, 220);
+}
 
 div.container, div.home-container {
 	max-width: 40em;
@@ -13,12 +16,8 @@ div.container, div.home-container {
 }
 
 h1 {
-	width: 7em;
-	margin: 1em .5em;
-}
-
-nav {
-	margin: .5em;
+	width: 25em;
+	margin: 1em .5em 1em 0em;
 }
 
 nav ul li {
@@ -26,16 +25,18 @@ nav ul li {
 }
 
 nav ul li a {
-	color: rgb(92, 118, 150);
+	color: rgb(128, 50, 27);
 	text-decoration: none;
-	font-family: sans-serif;
-	font-weight: 700;
+	font-family: "quasimoda", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 h2 {
-	font-family: serif;
-	color: rgb(92, 118, 150);
-	font-weight: 600;
+	font-family: "the-seasons", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color:  rgb(128, 50, 27);
 	margin: .2em 0 .2em .1em;
 	font-size: 1.8em;
 }
@@ -43,6 +44,7 @@ h2 {
 aside h2 {
 	font-size: 1.2em;
 	margin: .3em 0 .3em 0;
+	color: rgb(1, 100, 65);
 }
 
 article h2 {
@@ -65,17 +67,25 @@ section.secondary-story p {
 
 article p {
 	margin-bottom: 1em;
+	font-family: "quasimoda", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+aside p{
+	color: rgb(128, 50, 27);
 }
 
 section.tertiary-story h2 {
 	font-size: 1.2em;
-	border-top: 1px solid rgb(136, 155, 179);
+	border-top: 1px solid  rgb(27, 43, 29);
 	padding-top: .5em;
 }
 
 p {
-	font-family: sans-serif;
+	font-family: "quasimoda", sans-serif;
 	font-weight: 400;
+	font-style: normal;
 	margin: 0em .3em 2em .3em;
 }
 
@@ -89,20 +99,21 @@ section.tertiary-story p {
 }
 
 aside {
-	background-color: rgb(204, 207, 251);
+	background-color: rgb(240, 202, 202);
 	padding: 1.5em .5em;
 }
 
 figcaption {
-	font-style: italic;
-	font-family: sans-serif;
+	font-family: "the-seasons", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	margin: .5em 0 1em .3em;
 	color: rgb(96, 96, 96);
 }
 
 footer {
-	background-color: rgb(92, 118, 150);
-	color: rgb(255, 255, 255);
+	background-color: rgb(9, 30, 12);
+	color:rgb(243, 220, 220);
 	padding: .5em;
 	box-sizing: border-box;
 }
