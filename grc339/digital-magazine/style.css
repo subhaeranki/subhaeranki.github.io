@@ -10,6 +10,10 @@ body {
 	background-color: rgb(243, 220, 220);
 }
 
+nav {
+	margin-bottom: .5em;
+}
+
 div.container, div.home-container {
 	max-width: 40em;
 	margin: auto;
@@ -118,6 +122,7 @@ footer {
 	box-sizing: border-box;
 }
 
+
 @media only screen and (min-width: 40em) {
 	nav ul li {
 		display: inline;
@@ -221,4 +226,139 @@ footer {
 	section.secondary-story p {
 		flex: 0 0 4em;
 	}
+}
+
+/* Gallery */
+
+div.gallery-container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+div.gallery main h2 {
+    margin: 1em 1em 1em 0;
+}
+
+div.gallery article {
+    position: relative;
+    overflow: hidden; 
+    padding-bottom: calc(65% + 3em);
+}
+
+div.gallery figure {
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute; 
+    opacity: 0; 
+    transition: 0.5s; 
+}
+
+div.gallery img {
+    width: 100%;
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9){
+    opacity: 1; 
+}
+
+div.gallery nav {
+    display: grid; 
+    grid-template-columns: repeat(9, 1fr); 
+    grid-gap: 0.2em; 
+}
+
+div.gallery input {
+    display: none;
+}
+
+/* Newsletter */
+
+form {
+    background-color:  rgb(240, 202, 202);
+    padding: 1em;
+    margin-bottom: 1.5em;
+	margin-top: 1em
+}
+
+div.newsletter-container {
+    max-width: 60em;
+    margin: auto;
+    padding: 0.5em;
+}
+
+section.personal-info h2 {
+    margin-top: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+	font-family: "the-seasons", sans-serif;
+    margin: 1.5em 0 0.5em 0;
+}
+
+h4 {
+   font-size: 1em;
+   font-family: "the-seasons", sans-serif;
+   margin-bottom: 0.5em;
+}
+
+section.personal-info ul {
+    list-style-type: none;
+}
+
+section.personal-info ul li{
+    flex: 1 0 10em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+	font-family: "quasimoda", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+section.personal-info ul li label {
+    flex: 0 0 4em;
+}
+
+section.personal-info ul li input[type="text"],
+section.personal-info ul li input[type="email"],
+section ul li select {
+    flex: 3em 0em 15em;
+    box-sizing: border-box;
+}
+
+section.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    list-style-type: none;
+
+}
+
+section.contact-info ul li {
+    flex: 0 0 10em;
+    padding-right: 1em;
+	font-family: "quasimoda", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+button {
+	font-family: "the-seasons", sans-serif;
+    font-size: 1em;
+    background-color: rgb(1, 100, 65);
+    color: rgb(245, 245, 245);
+    border-style: none;
+    width: 7em;
+    height: 2em;
 }
